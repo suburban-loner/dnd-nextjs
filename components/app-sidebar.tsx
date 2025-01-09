@@ -1,7 +1,6 @@
 import * as React from "react"
 import { GalleryVerticalEnd } from "lucide-react"
 import Link from "next/link"
-import { SearchForm } from "./search-form"
 import {
   Sidebar,
   SidebarContent,
@@ -86,7 +85,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarMenuItem>
         </SidebarMenu>
       </SidebarHeader>
-      <SearchForm />
       <SidebarContent>
         <SidebarGroup>
           <SidebarMenu>

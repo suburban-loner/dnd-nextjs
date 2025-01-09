@@ -5,16 +5,15 @@ export default function Custom404() {
     <div style={containerStyle}>
       <h1 style={titleStyle}>404 - Page Not Found</h1>
       <p style={messageStyle}>
-        Oops! The page you’re looking for doesn’t exist. It might have been moved or removed.
+        The page you are looking for does not exist.
       </p>
-      <Link href="/" passHref>
+      <Link href="/dashboard" passHref>
         <button style={buttonStyle}>Go Back to Home</button>
       </Link>
     </div>
   );
 }
 
-// Define styles as constants with explicit types
 const containerStyle: React.CSSProperties = {
   display: 'flex',
   flexDirection: 'column',
@@ -22,7 +21,7 @@ const containerStyle: React.CSSProperties = {
   justifyContent: 'center',
   height: '100vh',
   textAlign: 'center',
-  backgroundColor: '#f8f9fa',
+  backgroundColor: 'white',
   color: '#212529',
 };
 
@@ -40,7 +39,7 @@ const messageStyle: React.CSSProperties = {
 const buttonStyle: React.CSSProperties = {
   padding: '10px 20px',
   fontSize: '1rem',
-  backgroundColor: '#007bff',
+  backgroundColor: 'grey',
   color: '#fff',
   border: 'none',
   borderRadius: '5px',
